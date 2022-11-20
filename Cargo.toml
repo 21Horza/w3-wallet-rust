@@ -1,0 +1,16 @@
+[package]
+name = "crypto_wallet"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+web3 = "0.17.0"
+dotenv = "0.15.0"
+anyhow = "1.0.66"
+serde_json = "1.0.87"
+tiny-keccak = { version = "1.4" }
+tokio = { version= "1", features = ["full"] }
+serde = { version = "1.0.147", features = ["derive"]}
+secp256k1 = { version = "0.20.3", features = ["rand"] }
